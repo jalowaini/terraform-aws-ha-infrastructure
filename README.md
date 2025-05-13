@@ -1,6 +1,6 @@
-# 📦 Project 1: Deploying a Highly Available Infrastructure in AWS Using Terraform
+# Deploying a Highly Available Infrastructure in AWS Using Terraform
 
-## ✅ Project Overview
+## Project Overview
 This project provisions a **highly available infrastructure** on AWS using Terraform. It simulates a production-grade environment with:
 
 - A custom VPC with public & private subnets
@@ -16,17 +16,6 @@ This project provisions a **highly available infrastructure** on AWS using Terra
 ## 🔧 Tools Used
 - **Terraform** (IaC)
 - **AWS EC2, VPC, RDS, ALB, Subnets, Security Groups**
-
----
-
-## 📁 Folder Structure
-```bash
-project1-terraform/
-├── main.tf
-├── variables.tf (optional)
-├── outputs.tf (optional)
-└── README.md
-```
 
 ---
 
@@ -66,26 +55,10 @@ project1-terraform/
 
 ---
 
-## 🧪 Testing
+## Testing
 - Visit ALB DNS name in browser → Should route to EC2s
 - SSH to EC2 (if needed) via private IP (through bastion if you have one)
 - Connect to RDS using MySQL client via internal EC2
-
----
-
-## 📝 Notes
-- Auto Scaling was skipped due to vCPU limit in AWS Free Tier
-- Engine version updated to 8.0.34 due to compatibility
-- `aws_launch_template` used instead of deprecated `aws_launch_configuration`
-
----
-
-## 🚀 Future Enhancements
-- Add Auto Scaling Group once vCPU limit is lifted
-- Move secrets to AWS Secrets Manager or SSM
-- Use modules to refactor infrastructure
-- Add monitoring (CloudWatch, Prometheus)
-- Enable HTTPS via ACM + ALB Listener
 
 ---
 
@@ -94,7 +67,7 @@ This project is a foundational setup for production-grade AWS infrastructure. Yo
 
 ---
 
-**Author**: DevOps Engineer | [LinkedIn Profile](https://www.linkedin.com/in/jafar-abdullah-4445bb231)
+Built with ❤️ by @jalowaini
 
-**Status**: ✅ Finished Phase 1 — Ready to extend to CI/CD.
+
 
